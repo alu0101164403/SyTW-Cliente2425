@@ -1,0 +1,21 @@
+// Reseteo básico y estilos globales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: $text-color;
+  }
+  
+  h1, h2 {
+    @include header-style;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

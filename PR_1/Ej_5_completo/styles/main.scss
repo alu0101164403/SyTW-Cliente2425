@@ -1,0 +1,153 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+
+// Encabezado y navegación
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $header-color;
+  padding: 20px;
+
+  .company-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .company-name h1 {
+    @include header-style;
+  }
+}
+
+.navigation {
+  background-color: $nav-color;
+  text-align: center;
+  padding: 15px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  li {
+    a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 20px;
+      background-color: $primary-color;
+      border-radius: 20px;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
+
+
+// Secciones
+.description, .products, .testimonials, .guarantees {
+  @include section-style;
+}
+
+.products .product-grid {
+  @include grid-style(3); // Grid con 3 columnas
+}
+
+.testimonials .testimonials-grid {
+  @include grid-style(4); // Grid con 4 columnas
+}
+
+.product, .testimonial {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+
+  img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+
+  h3, h4 {
+    margin: 10px 0;
+  }
+
+  p {
+    font-size: 14px;
+    color: $text-color;
+    margin-bottom: 20px;
+  }
+
+  button {
+    @include button-styles;
+    margin-top: 10px;
+  }
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+
+.product {
+  text-align: center;
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  img {
+    width: 50%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+}
+
+.guarantees {
+  background-color: $secondary-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  p {
+    font-size: 18px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.section {
+  animation: fadeIn 0.6s ease-in-out;
+}

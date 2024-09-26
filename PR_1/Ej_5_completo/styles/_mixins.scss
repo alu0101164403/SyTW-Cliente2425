@@ -1,0 +1,55 @@
+// Mixin para centrar elementos con flexbox
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  // Mixin para estilos de encabezados
+  @mixin header-style {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: $text-color;
+  }
+  
+  // Mixin para estilos de secciones
+  @mixin section-style {
+    background-color: $section-bg;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  // Mixin para estilos de grid
+  @mixin grid-style($columns) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: 15px;
+  }
+  
+  // Mixin para formularios
+  @mixin form-style {
+    display: flex;
+    flex-direction: column;
+    input, textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+  }
+
+  @mixin button-styles {
+    background-color: $primary-color;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    height: 40px;
+    width: 150px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: $secondary-color;
+    }
+  }
+  

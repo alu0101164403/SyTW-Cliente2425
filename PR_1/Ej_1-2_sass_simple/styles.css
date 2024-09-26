@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #531946;
+  padding: 20px;
+  text-align: center;
+}
+header h1 {
+  color: #000000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  height: 500px;
+}
+
+.left {
+  background-color: chocolate;
+  flex: 2;
+  margin-right: 10px;
+  padding: 20px;
+}
+.left h2 {
+  color: #000000;
+  font-size: 18px;
+}
+
+.right {
+  background-color: chocolate;
+  flex: 1;
+  padding: 20px;
+}
+.right h2 {
+  color: #000000;
+  font-size: 18px;
+}/*# sourceMappingURL=styles.css.map */
