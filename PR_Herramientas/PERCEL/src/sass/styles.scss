@@ -1,0 +1,61 @@
+@import "variables";
+
+// Estilos generales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: $colorBase1;
+    padding: 20px;
+    text-align: center;
+    h1 {
+        color: $fontColor;
+    }
+}
+
+footer {
+    background-color: $footerColor;
+    text-align: center;
+    padding: 20px;
+    color: $fontColor;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+article {
+    background-color: $articleColor;
+    padding: 20px;
+    color: $fontColor;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+}
+
+.sidebar {
+    background-color: $sidebarColor;
+    flex: 1;
+    padding: 20px;
+    color: $fontColor;
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    height: $containerHeight;
+}
+
+.content {
+    flex: 5;
+    display: grid;
+    background-color: $colorBase1;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr); // 3 columnas iguales
+    gap: 20px; // Espacio entre artículos
+}
