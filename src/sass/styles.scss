@@ -1,0 +1,68 @@
+@use "variables";
+
+// Estilos generales
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: variables.$colorBase1;
+    padding: 20px;
+    text-align: center;
+    h1 {
+        color: variables.$fontColor;
+    }
+}
+
+footer {
+    background-color: variables.$footerColor;
+    text-align: center;
+    padding: 20px;
+    color: variables.$fontColor;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+article {
+    background-color: variables.$articleColor;
+    padding: 20px;
+    color: variables.$fontColor;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.sidebar {
+    background-color: variables.$sidebarColor;
+    flex: 1;
+    padding: 20px;
+    color: variables.$fontColor;
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+    height: variables.$containerHeight;
+}
+
+.content {
+    flex: 5;
+    display: grid;
+    background-color: variables.$colorBase1;
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr); // 3 columnas iguales
+    gap: 20px; // Espacio entre artículos
+}
