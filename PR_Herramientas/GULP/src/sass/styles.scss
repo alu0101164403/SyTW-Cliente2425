@@ -35,6 +35,12 @@ article {
     h2 {
         margin-bottom: 10px;
     }
+    img {
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 .sidebar {
