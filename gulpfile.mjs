@@ -26,7 +26,7 @@ gulp.task('styles', function () {
     .pipe(concatCss("styles.css"))            // Nombre del archivo final
     .pipe(minifyCss())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/css'))              // Carpeta de destino
+    .pipe(gulp.dest('dist/src/css'))              // Carpeta de destino
     .pipe(browserSync.stream());
 });
 
@@ -34,7 +34,7 @@ gulp.task('styles', function () {
 gulp.task('scripts', function () {
   return gulp.src('./src/js/*.js')
     .pipe(uglify())
-    .pipe(gulp.dest('dist/js'))
+    .pipe(gulp.dest('dist/src/js'))
     .pipe(browserSync.stream());
 });
 
@@ -42,7 +42,7 @@ gulp.task('scripts', function () {
 gulp.task('images', function () {
   return gulp.src('./src/images/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/images'));
+    .pipe(gulp.dest('dist/src/images'));
 });
 
 // Tarea para iniciar BrowserSync
