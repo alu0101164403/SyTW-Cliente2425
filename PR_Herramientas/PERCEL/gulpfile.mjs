@@ -13,20 +13,20 @@ const sass = gulpSass(dartSass); // Configurando el compilador Sass
 
 // Tarea para copiar archivos HTML
 gulp.task('html', function () {
-  return gulp.src('./src/*.html')
+  return gulp.src('./*.html')
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.stream());
 });
 
 // Tarea para compilar SASS a CSS, concatenar y minificar CSS con source maps
 gulp.task('styles', function () {
-  return gulp.src(['./src/css/*.css', './src/sass/*.scss'])  // Incluye archivos CSS y SASS
+  return gulp.src('./src/sass/styles.scss') 
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))  // Compila SASS a CSS
-    .pipe(concatCss("styles.css"))
+    .pipe(concatCss("styles.css"))            // Nombre del archivo final
     .pipe(minifyCss())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/css'))
+    .pipe(gulp.dest('dist/css'))              // Carpeta de destino
     .pipe(browserSync.stream());
 });
 
@@ -51,7 +51,7 @@ gulp.task('serve', function () {
     server: './dist'
   });
 
-  gulp.watch('./src/*.html', gulp.series('html'));
+  gulp.watch('./*.html', gulp.series('html'));
   gulp.watch(['./src/css/*.css', './src/sass/*.scss'], gulp.series('styles'));
   gulp.watch('./src/js/*.js', gulp.series('scripts'));
   gulp.watch('./src/images/*', gulp.series('images'));

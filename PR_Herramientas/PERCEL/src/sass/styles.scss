@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables";
 
 // Estilos generales
 * {
@@ -8,19 +8,19 @@
 }
 
 header {
-    background-color: $colorBase1;
+    background-color: variables.$colorBase1;
     padding: 20px;
     text-align: center;
     h1 {
-        color: $fontColor;
+        color: variables.$fontColor;
     }
 }
 
 footer {
-    background-color: $footerColor;
+    background-color: variables.$footerColor;
     text-align: center;
     padding: 20px;
-    color: $fontColor;
+    color: variables.$fontColor;
 }
 
 body {
@@ -28,33 +28,40 @@ body {
 }
 
 article {
-    background-color: $articleColor;
+    background-color: variables.$articleColor;
     padding: 20px;
-    color: $fontColor;
+    color: variables.$fontColor;
 
     h2 {
         margin-bottom: 10px;
     }
+
+    img {
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
 }
 
 .sidebar {
-    background-color: $sidebarColor;
+    background-color: variables.$sidebarColor;
     flex: 1;
     padding: 20px;
-    color: $fontColor;
+    color: variables.$fontColor;
     margin-right: 20px;
 }
 
 .container {
     display: flex;
     padding: 20px;
-    height: $containerHeight;
+    height: variables.$containerHeight;
 }
 
 .content {
     flex: 5;
     display: grid;
-    background-color: $colorBase1;
+    background-color: variables.$colorBase1;
     padding: 10px;
     grid-template-columns: repeat(3, 1fr); // 3 columnas iguales
     gap: 20px; // Espacio entre artículos
