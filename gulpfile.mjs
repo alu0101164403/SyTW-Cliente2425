@@ -30,6 +30,18 @@ gulp.task('styles', function () {
     .pipe(browserSync.stream());
 });
 
+// Tarea para compilar SASS a CSS, concatenar y minificar CSS con source maps
+gulp.task('stylescss', function () {
+  return gulp.src('./src/sass/styles.scss') 
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))  // Compila SASS a CSS
+    .pipe(concatCss("styles.css"))            // Nombre del archivo final
+    .pipe(minifyCss())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('./src/css'))              // Carpeta de destino
+    .pipe(browserSync.stream());
+});
+
 // Tarea para minificar JS
 gulp.task('scripts', function () {
   return gulp.src('./src/js/*.js')
@@ -40,7 +52,7 @@ gulp.task('scripts', function () {
 
 // Tarea para optimizar imágenes
 gulp.task('images', function () {
-  return gulp.src('./src/images/*')
+  return gulp.src('./src/images/*.jpg')
     .pipe(imagemin())
     .pipe(gulp.dest('dist/src/images'));
 });
@@ -58,4 +70,4 @@ gulp.task('serve', function () {
 });
 
 // Tarea por defecto que ejecuta todas las demás
-gulp.task('default', gulp.parallel('html', 'styles', 'scripts', 'images', 'serve'));
+gulp.task('default', gulp.parallel('html', 'styles', 'stylescss', 'scripts', 'images', 'serve'));

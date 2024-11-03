@@ -20,6 +20,4 @@ Instalaciones realizadas:
 Ejecución:
 -   npm start
 -   gulp
-
-- npm run build
 - npm run deploy
