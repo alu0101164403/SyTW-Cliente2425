@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Web Component Ciclo de Vida</title>
+  </head>
+  <body>
+      <h1>Ejemplo de Web Component</h1>
+      <button id="toggle">Añadir/Quitar Componente</button>
+      <button id="change-attr">Cambiar Atributo</button>
+
+      <script src="component.js"></script>
+
+      <script>
+          const buttonToggle = document.getElementById('toggle');
+          const buttonChangeAttr = document.getElementById('change-attr');
+
+          buttonToggle.addEventListener('click', () => {
+              const component = document.querySelector('my-web-component');
+
+              if (component) {
+                  component.remove();
+              } else {
+                  const newComponent = document.createElement('my-web-component');
+                  document.body.appendChild(newComponent);
+              }
+          });
+
+          buttonChangeAttr.addEventListener('click', () => {
+              const component = document.querySelector('my-web-component');
+              if (component) {
+                  const currentAttr = component.getAttribute('data-attribute');
+                  const newAttr = currentAttr === 'valor1' ? 'valor2' : 'valor1';
+                  component.setAttribute('data-attribute', newAttr);
+              }
+          });
+      </script>
+  </body>
+</html>
