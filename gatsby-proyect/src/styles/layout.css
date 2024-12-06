@@ -1,0 +1,31 @@
+/* layout.css */
+.layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.image-grid {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.image-item {
+  text-align: center;
+  width: 150px;
+}
+
+.image-item p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #0056b3;
+}

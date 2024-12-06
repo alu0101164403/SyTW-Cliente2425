@@ -1,0 +1,28 @@
+/* global.css */
+h1, h2, h3 {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+  
+html, body {
+  height: 100%; 
+  overflow-x: hidden; 
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
