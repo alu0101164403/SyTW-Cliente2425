@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 import { graphql } from 'gatsby';
 import Rating from '../components/Rating';
+import '../styles/newsTemplate.css'; 
 
 export const Head = ({ data }) => <title>{data.newsArticle.title}</title>;
 

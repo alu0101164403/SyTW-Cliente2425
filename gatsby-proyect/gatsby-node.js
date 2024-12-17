@@ -7,7 +7,46 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => 
   const API_KEY = '27ed3557dfb9494fb42efb0eb483f325';
   const categories = ['sports', 'technology', 'politics'];
 
+  const MOCKAPI_URL = 'https://6761b00246efb3732372a1df.mockapi.io/noticias/notice';
+
   for (const category of categories) {
+    let articles = [];
+    try {
+      // Intentar obtener datos desde NewsAPI
+      const response = await axios.get('https://newsapi.org/v2/top-headlines', {
+        params: {
+          category,
+          country: 'es',
+          apiKey: API_KEY,
+        },
+      });
+      articles = response.data.articles;
+
+      if (!articles || articles.length === 0) {
+        throw new Error('Sin datos desde NewsAPI');
+      }
+    } catch (error) {
+      console.error(`Error con NewsAPI: ${error.message}. Cargando datos desde MockAPI.`);
+      const mockResponse = await axios.get(`${MOCKAPI_URL}`);
+      articles = mockResponse.data.filter((article) => article.category === category);
+      console.log('articulos', articles);
+    }
+
+    articles.forEach((article) => {
+      createNode({
+        ...article,
+        id: createNodeId(`${category}-${article.title || article.id}`),
+        category,
+        internal: {
+          type: 'NewsArticle',
+          contentDigest: createContentDigest(article),
+        },
+      });
+    });
+  }
+};
+
+/*
     const response = await axios.get('https://newsapi.org/v2/top-headlines', {
       params: {
         category,
@@ -28,7 +67,7 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => 
       });
     });
   }
-};
+};*/
 
 
 

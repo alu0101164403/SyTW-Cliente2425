@@ -31,7 +31,7 @@ const PolicyPage = () => {
               <img
                 src={article.urlToImage}
                 alt={article.title}
-                className="card-image"
+                className="cardnews-image"
               />
             )}
             <div className="cardnews-content">
