@@ -1,3 +1,7 @@
+/* Error eslint: imagen sin atributo alt */
+/* Error eslint: roles duplicados */
+
+
 import React from 'react';
 import Layout from '../components/Layout';
 import { useStaticQuery, graphql, Link } from 'gatsby';
@@ -30,11 +34,10 @@ const SportsPage = () => {
             {article.urlToImage && (
               <img
                 src={article.urlToImage}
-                alt={article.title}
                 className="cardnews-image"
-              />
-            )}
-            <div className="cardnews-content">
+              /> 
+            )} 
+            <div className="cardnews-content" role="button" role="link"> 
               <Link to={`/news/${article.id}`} className="cardnews-card-title">
                 <h3>{article.title}</h3>
               </Link>

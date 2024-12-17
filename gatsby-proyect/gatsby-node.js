@@ -29,7 +29,6 @@ exports.sourceNodes = async ({ actions, createNodeId, createContentDigest }) => 
       console.error(`Error con NewsAPI: ${error.message}. Cargando datos desde MockAPI.`);
       const mockResponse = await axios.get(`${MOCKAPI_URL}`);
       articles = mockResponse.data.filter((article) => article.category === category);
-      console.log('articulos', articles);
     }
 
     articles.forEach((article) => {
