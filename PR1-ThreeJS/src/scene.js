@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { getRandomMaterial } from './materials.js';
 
 // Función para generar geometrías aleatorias
 export function getRandomGeometry() {
@@ -19,17 +20,13 @@ export function generateRandomScene(scene, plane, light, ambientLight) {
     }
 
     // Agrega el suelo y la iluminación de nuevo
-    scene.add(plane);
-    scene.add(light);
-    scene.add(ambientLight);
+    scene.add(plane, light, ambientLight);
 
-    // Crea entre 3 y 6 objetos aleatorios
+    // Crea entre 3 y 6 objetos aleatorios con materiales variados
     const objectCount = Math.floor(Math.random() * 4) + 3;
     for (let i = 0; i < objectCount; i++) {
         const geometry = getRandomGeometry();
-        const material = new THREE.MeshStandardMaterial({
-            color: Math.random() * 0xffffff,
-        });
+        const material = getRandomMaterial();
         const mesh = new THREE.Mesh(geometry, material);
         mesh.castShadow = true;
         mesh.position.set(
