@@ -5,11 +5,11 @@
 115C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\renderers\common\StorageTexture.js133793510024142624 0
 125C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\renderers\webgpu\utils\WebGPUTextureUtils.js133793510028481752 0
 109C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\examples\jsm\math\ColorSpaces.js133793510013330975 0
-62C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\dist133795174204971822 1
+62C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\dist133795185205087639 1
 122C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\materials\nodes\LineDashedNodeMaterial.js133793510017532166 0
 117C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\examples\jsm\tsl\display\RGBShiftNode.js133793510022449365 0
 112C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\nodes\utils\ArrayElementNode.js133793510011710129 0
-68C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\.gitignore133795114051601372 0
+68C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\.gitignore133795176024901655 0
 89C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\.package-lock.json133795097276835339 0
 96C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\math\Vector4.js133793510027075095 0
 101C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\examples\jsm\math\Lut.js133793510017923045 0
@@ -24,7 +24,7 @@
 87C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\scenes133793510022739139 1
 120C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\examples\jsm\postprocessing\HalftonePass.js133793510016141692 0
 110C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\lights\webgpu\IESSpotLight.js133793510016356991 0
-67C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\README.md133795136861363940 0
+67C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\README.md133795195649649456 0
 112C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\nodes\accessors\UserDataNode.js133793510026855007 0
 106C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\nodes\core\NodeUniform.js133793510020070154 0
 118C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\materials\nodes\ShadowNodeMaterial.js133793510023139466 0
@@ -39,15 +39,15 @@
 94C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\math\Line3.js133793510017412193 0
 61C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\src133795133726579411 1
 105C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\nodes\fog\FogExp2Node.js133793510015531603 0
-70C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\src\light.js133795134246990015 0
+70C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\src\light.js133795177356670849 0
 134C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\renderers\webgl-fallback\utils\WebGLAttributeUtils.js133793510027646603 0
-69C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\src\main.js133795172942992197 0
+69C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\src\main.js133795185202349579 0
 111C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\examples\jsm\loaders\FontLoader.js133793510015561610 0
 98C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\examples\jsm\controls133793510026263529 1
 130C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\nodes\functions\material\getAlphaHashThreshold.js133793510015761579 0
 114C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\renderers\common\StorageBuffer.js133793510024094237 0
 146C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\renderers\shaders\ShaderChunk\cube_uv_reflection_fragment.glsl.js133793510013681049 0
-70C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\src\scene.js133795174203380382 0
+70C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\src\scene.js133795184836937887 0
 91C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\nodes\code133793510022829147 1
 117C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\nodes\utils\TriplanarTexturesNode.js133793510026465041 0
 94C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\scenes\Fog.js133793510015501592 0
@@ -76,7 +76,7 @@
 85C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\examples133793510010974343 1
 118C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\nodes\lighting\LightingContextNode.js133793510017056946 0
 104C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\textures\CubeTexture.js133793510013751319 0
-80C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\dist\index.4d6bcbeb.js133795174204851787 0
+80C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\dist\index.4d6bcbeb.js133795185204982436 0
 97C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\examples\jsm\effects133793510023984214 1
 84C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\LICENSE133793510010716941 0
 114C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\examples\jsm\helpers\TextureHelper.js133793510024547953 0
@@ -245,7 +245,7 @@
 118C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\renderers\webgpu\utils\WebGPUUtils.js133793510028491761 0
 117C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\examples\jsm\libs\draco\draco_encoder.js133793510014716373 0
 119C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\nodes\lighting\BasicEnvironmentNode.js133793510011960109 0
-85C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\dist\index.2cdaf7bc.css.map133795125322249640 0
+85C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\dist\index.2cdaf7bc.css.map133795184674649277 0
 92C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\math\Ray.js133793510021936263 0
 123C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\renderers\webgpu\nodes\BasicNodeLibrary.js133793510012040105 0
 126C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\renderers\webgpu\nodes\StandardNodeLibrary.js133793510023944371 0
@@ -263,7 +263,7 @@
 112C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\nodes\accessors\ClippingNode.js133793510013125758 0
 138C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\renderers\shaders\ShaderChunk\colorspace_fragment.glsl.js133793510013295847 0
 106C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\core\InterleavedBuffer.js133793510016716974 0
-73C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\dist\index.html133795125322039686 0
+73C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\dist\index.html133795184678282285 0
 118C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\examples\jsm\geometries\TeapotGeometry.js133793510024378025 0
 139C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\renderers\shaders\ShaderChunk\morphinstance_vertex.glsl.js133793510019370115 0
 128C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\three\src\renderers\webgl-fallback\WebGLBufferRenderer.js133793510027766569 0
@@ -1260,5 +1260,5 @@
 104C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\dat.gui\src\dat\color\toString.js133793510009789629 0
 102C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\dat.gui\build\dat.gui.module.js133793510009450746 0
 106C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\node_modules\dat.gui\build\dat.gui.module.js.map133793510009910105 0
-81C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\dist\index.2cdaf7bc.css133795125322049740 0
-84C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\dist\index.4d6bcbeb.js.map133795174204962133 0
+81C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\dist\index.2cdaf7bc.css133795184674596998 0
+84C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\PR1-ThreeJS\dist\index.4d6bcbeb.js.map133795185205078065 0

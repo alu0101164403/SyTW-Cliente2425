@@ -6,6 +6,7 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Parcel
+.parcel-cache/
 .cache/
 dist/
 

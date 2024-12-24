@@ -13,7 +13,7 @@ export function addLighting(scene) {
     directionalLight.shadow.mapSize.height = 1024;
     scene.add(directionalLight);
 
-    // Luz de punto (resalta áreas específicas)
+    // Para resaltar áreas específicas
     const pointLight = new THREE.PointLight(0xff0000, 1, 50);
     pointLight.position.set(0, 5, 0);
     scene.add(pointLight);

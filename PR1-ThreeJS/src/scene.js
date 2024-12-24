@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import { getRandomMaterial } from './materials.js';
 
-// Función para generar geometrías aleatorias
+// Geometrías aleatorias
 export function getRandomGeometry() {
     const geometries = [
         new THREE.BoxGeometry(),
@@ -12,7 +12,7 @@ export function getRandomGeometry() {
     return geometries[Math.floor(Math.random() * geometries.length)];
 }
 
-// Función para generar una escena aleatoria
+// Escena aleatoria
 export function generateRandomScene(scene, plane, light, ambientLight) {
     // Limpia la escena anterior
     while (scene.children.length > 0) {
@@ -37,4 +37,5 @@ export function generateRandomScene(scene, plane, light, ambientLight) {
         mesh.name = geometry.type;
         scene.add(mesh);
     }
+    scene.background = new THREE.Color(0x87cefa);
 }

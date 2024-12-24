@@ -4,7 +4,8 @@ import { GLTFExporter } from 'three/examples/jsm/exporters/GLTFExporter.js';
 import { generateRandomScene } from './scene.js';
 import { addLighting } from './light.js';
 
-// Elementos HTML
+//--- Elementos HTML ---//
+
 const container = document.getElementById('container');
 const infoPanel = document.getElementById('object-info');
 const downloadButton = document.getElementById('download-button');
@@ -25,24 +26,26 @@ const { ambientLight, directionalLight, pointLight, spotLight } = addLighting(sc
 
 // Suelo
 const planeGeometry = new THREE.PlaneGeometry(10, 10);
-const planeMaterial = new THREE.MeshStandardMaterial({ color: 0x808080 });
+//const planeMaterial = new THREE.MeshStandardMaterial({ color: 0x808080 });
+const planeMaterial = new THREE.MeshStandardMaterial({ color: 0xebf0ef });
 const plane = new THREE.Mesh(planeGeometry, planeMaterial);
 plane.rotation.x = -Math.PI / 2;
 plane.receiveShadow = true;
 
-// Agrega elementos iniciales a la escena
+
+// Agregar elementos iniciales a la escena
 generateRandomScene(scene, plane, directionalLight, ambientLight);
 
 // Controles orbitales
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
 
-// Animación de un objeto aleatorio (deslizar hacia arriba y abajo)
+// Animación de un objeto aleatorio
 let animatedObject = null;
-let animationDirection = 1; // Dirección de la animación (1: hacia arriba, -1: hacia abajo)
-let animationSpeed = 0.05; // Velocidad de animación
+let animationDirection = 1; // Dirección de la animación, 1 hacia arriba, -1 hacia abajo
+let animationSpeed = 0.05;
 
-// Seleccionar un objeto aleatorio y animarlo
+// Seleccion de objeto aleatorio y animarlo
 function selectRandomObjectForAnimation() {
     const objects = scene.children.filter(child => child instanceof THREE.Mesh && child !== plane);
     if (objects.length > 0) {
@@ -50,12 +53,12 @@ function selectRandomObjectForAnimation() {
     }
 }
 
-// Cambiar la posición de un objeto de arriba a abajo
+// Movimiento de  objeto de arriba a abajo
 function animateObject() {
     if (animatedObject) {
         animatedObject.position.y += animationDirection * animationSpeed;
 
-        // Revertir la dirección si llega al límite
+        // Si llega al limite, vuelve a su posicion original
         if (animatedObject.position.y > 2) {
             animationDirection = -1;
         } else if (animatedObject.position.y < 0.5) {
@@ -64,7 +67,7 @@ function animateObject() {
     }
 }
 
-// Detección de clic
+// Detectar clic
 const raycaster = new THREE.Raycaster();
 const pointer = new THREE.Vector2();
 
@@ -84,7 +87,6 @@ window.addEventListener('click', (event) => {
         const faces = geometry.index ? geometry.index.count / 3 : vertices / 3;
         const edges = geometry.index ? geometry.index.count : faces * 3;
 
-        // Mostrar información en el panel
         infoPanel.innerHTML = `
             <p><strong>Objeto:</strong> ${clickedObject.name}</p>
             <p><strong>Tipo:</strong> ${geometry.type}</p>
@@ -118,14 +120,13 @@ window.addEventListener('click', (event) => {
 // Botón para generar nueva escena
 newSceneButton.addEventListener('click', () => {
     generateRandomScene(scene, plane, directionalLight, ambientLight);
-    selectRandomObjectForAnimation(); // Seleccionar un nuevo objeto para animar
+    selectRandomObjectForAnimation(); // Nuevo objeto a animar
 });
 
 // Animación
 function animate() {
     requestAnimationFrame(animate);
     
-    // Animar el objeto seleccionado
     animateObject();
 
     controls.update();
@@ -133,5 +134,4 @@ function animate() {
 }
 animate();
 
-// Seleccionar un objeto aleatorio cuando la escena se genera por primera vez
 selectRandomObjectForAnimation();
