@@ -1,0 +1,51 @@
+# Node.js
+node_modules/
+
+# Dependencias de yarn
+yarn.lock
+
+# Dependencias de npm
+package-lock.json
+
+# Archivos de compilación
+/dist/
+/build/
+/.out/
+
+# Archivos generados por el entorno de desarrollo
+/.vscode/
+/.idea/
+/*.log
+
+# Archivos temporales de sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Archivos específicos de Parcel
+.cache/
+
+# Archivos específicos de Expo/React Native
+.expo/
+.expo-shared/
+
+# Archivos específicos de Tailwind CSS
+tailwind.config.js
+
+# Archivos de configuración de editor
+*.sublime-workspace
+*.sublime-project
+
+# Archivos específicos de Firebase
+firebase.json
+
+# Archivos de entorno (si usas variables de entorno)
+.env
+.env.local
+.env.*.local
+
+# Archivos de base de datos
+*.sqlite
+*.db
+
+# Archivos de log
+*.log
