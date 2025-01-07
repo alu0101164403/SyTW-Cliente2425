@@ -597,86 +597,74 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"bNKaB":[function(require,module,exports,__globalThis) {
 var _sparqlJs = require("./js/sparql.js");
-document.addEventListener("DOMContentLoaded", ()=>{
-    const testButton = document.createElement("button");
-    testButton.textContent = "Probar Consulta SPARQL";
-    document.body.appendChild(testButton);
-    testButton.addEventListener("click", async ()=>{
-        const query = `
-            SELECT DISTINCT ?type
-            WHERE {
-                ?x a ?type
-            } 
-            LIMIT 100
-        `;
-        console.log("Ejecutando consulta SPARQL...");
-        try {
-            const results = await (0, _sparqlJs.fetchSPARQLData)(query);
-            console.log("Resultados obtenidos:", results);
-        } catch (error) {
-            console.error("Error al ejecutar consulta SPARQL:", error);
+document.addEventListener('DOMContentLoaded', ()=>{
+    const regionQuery = `
+        SELECT DISTINCT ?option WHERE {
+            ?dataset <http://purl.org/dc/terms/spatial> ?option.
         }
+    `;
+    const publisherQuery = `
+        SELECT DISTINCT ?publicador ?label WHERE {
+            ?x a <http://www.w3.org/ns/dcat#Dataset> .
+            ?x <http://purl.org/dc/terms/publisher>
+            ?publicador. ?publicador <http://www.w3.org/2004/02/skos/core#prefLabel> ?label.
+        }
+    `;
+    const categoryQuery = `
+        SELECT DISTINCT ?option WHERE {
+            ?dataset <http://www.w3.org/ns/dcat#theme> ?option.
+        }
+    `;
+    populateSelect('region', regionQuery, 'option');
+    populateSelect('publisher', publisherQuery, 'publicador');
+    populateSelect('category', categoryQuery, 'option');
+    document.getElementById('filterForm').addEventListener('submit', async function(event) {
+        event.preventDefault();
+        const region = document.getElementById('region').value;
+        const publisher = document.getElementById('publisher').value;
+        const category = document.getElementById('category').value;
+        const keyword = document.getElementById('keyword').value;
+        const query = `
+            SELECT DISTINCT ?dataset ?title ?publisher WHERE {
+                ?dataset a <http://www.w3.org/ns/dcat#Dataset>.
+                ${region ? `?dataset <http://purl.org/dc/terms/spatial> <${region}>.` : ''}
+                ${publisher ? `?dataset <http://purl.org/dc/terms/publisher> <${publisher}>.` : ''}
+                ${category ? `?dataset <http://www.w3.org/ns/dcat#theme> <${category}>.` : ''}
+                ${keyword ? `?dataset <http://www.w3.org/ns/dcat#keyword> "${keyword}".` : ''}
+                ?dataset <http://purl.org/dc/terms/title> ?title.
+                ?dataset <http://purl.org/dc/terms/publisher> ?publisher.
+            } LIMIT 100
+        `;
+        const results = await executeQuery(query);
+        displayResults(results);
     });
 });
-
-},{"./js/sparql.js":"BVjTx"}],"BVjTx":[function(require,module,exports,__globalThis) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "fetchSPARQLData", ()=>fetchSPARQLData);
-async function fetchSPARQLData(query) {
-    const endpoint = "http://localhost:8080/http://datos.gob.es/virtuoso/sparql";
+async function populateSelect(selectId, query, bindingName = "option") {
+    const selectElement = document.getElementById(selectId);
     try {
-        const url = `${endpoint}?query=${encodeURIComponent(query)}`;
-        const response = await fetch(url, {
-            method: "GET",
-            headers: {
-                "Accept": "application/sparql-results+json",
-                "User-Agent": "Mozilla/5.0"
-            },
-            redirect: "follow"
+        const options = await (0, _sparqlJs.fetchOptions)(query, bindingName);
+        selectElement.innerHTML = '<option value="">Seleccione una opci\xf3n</option>';
+        options.forEach((option)=>{
+            const optionElement = document.createElement('option');
+            optionElement.value = option.uri;
+            optionElement.textContent = option.label;
+            selectElement.appendChild(optionElement);
         });
-        if (!response.ok) {
-            const errorText = await response.text();
-            throw new Error(`Error en la consulta SPARQL: ${response.status} - ${errorText}`);
-        }
-        const data = await response.json();
-        return data.results.bindings;
     } catch (error) {
-        console.error("Error al obtener datos SPARQL:", error);
-        return [];
+        selectElement.innerHTML = '<option value="">Error al cargar opciones</option>';
+        console.error(`Error al cargar ${selectId}:`, error);
     }
 }
+function displayResults(results) {
+    const resultList = document.getElementById('resultList');
+    resultList.innerHTML = '';
+    results.forEach((result)=>{
+        const listItem = document.createElement('li');
+        listItem.textContent = `T\xedtulo: ${result.title}, Publicador: ${result.publisher}`;
+        resultList.appendChild(listItem);
+    });
+}
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports,__globalThis) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}]},["9w8YQ","bNKaB"], "bNKaB", "parcelRequire94c2")
+},{"./js/sparql.js":"BVjTx"}]},["9w8YQ","bNKaB"], "bNKaB", "parcelRequire94c2")
 
 //# sourceMappingURL=index.0641b553.js.map

@@ -11,8 +11,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@comunica/actor-init-sparql": "^3.1.0",
-    "@comunica/query-sparql": "^4.0.2",
     "cors-anywhere": "^0.4.4"
   },
   "devDependencies": {

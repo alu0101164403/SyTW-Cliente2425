@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SPARQL Data Explorer</title>
-  <link rel="stylesheet" href="./src/styles/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <script type="module" src="./src/app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPARQL Filters - Datos de Canarias</title>
+    <link rel="stylesheet" href="./src/styles/styles.css">
 </head>
 <body>
-  <header>
-    Aplicación de Consultas SPARQL
-  </header>
-  
-  <div class="container">
-    <form class="search-form">
-      <input type="text" placeholder="Busca datasets..." aria-label="Campo de búsqueda">
-      <button type="submit">Buscar</button>
-    </form>
+    <header>
+        <h1>Consulta SPARQL - Datos de Canarias</h1>
+    </header>
 
-    <div class="results">
-      <div class="card">
-        <h3>Nombre del Dataset</h3>
-        <p>Descripción del dataset o enlace.</p>
-        <a href="#" target="_blank" class="btn-link">Descargar Dataset</a>
-      </div>
+    <main>
+        <section id="filters">
+            <h2>Filtros</h2>
+            <form id="filterForm">
+                <label for="region">Región:</label>
+                <select id="region" name="region">
+                    <option value="">Cargando regiones...</option>
+                </select>
 
-      <div class="card">
-        <h3>Otro Dataset</h3>
-        <p>Otra descripción.</p>
-        <a href="#" target="_blank" class="btn-link">Descargar Dataset</a>
-      </div>
-    </div>
-  </div>
+                <label for="publisher">Entidad publicadora:</label>
+                <select id="publisher" name="publisher">
+                    <option value="">Cargando entidades...</option>
+                </select>
 
-  <footer>
-    <p>&copy; 2025 SPARQL Data Explorer. Todos los derechos reservados.</p>
-    <a href="https://datos.gob.es/en" target="_blank">Datos Abiertos España</a> | 
-    <a href="https://github.com/alu0101164403/SyTW-Cliente2425" target="_blank">Repositorio en GitHub</a>
-  </footer>
+                <label for="category">Categoría:</label>
+                <select id="category" name="category">
+                    <option value="">Cargando categorías...</option>
+                </select>
+
+                <label for="keyword">Palabra clave:</label>
+                <input type="text" id="keyword" name="keyword" placeholder="Ingrese una palabra clave">
+
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+
+        <section id="results">
+            <h2>Resultados</h2>
+            <ul id="resultList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Consulta SPARQL - Datos de Canarias © 2025</p>
+    </footer>
+
+    <script src="./src/js/sparql.js" type="module"></script>
+    <script src="./src/app.js" type="module"></script>
 </body>
 </html>

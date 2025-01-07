@@ -49,3 +49,5 @@ firebase.json
 
 # Archivos de log
 *.log
+
+.codegpt
