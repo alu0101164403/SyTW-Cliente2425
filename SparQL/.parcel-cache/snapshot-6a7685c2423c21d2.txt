@@ -1,4 +1,4 @@
-14561
+14560
 98C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-data-factory\lib\Variable.js133798758847262824 0
 104C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\type-fest\source\iterable-element.d.ts133802210790361307 0
 88C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\commander\package.json133802210789349407 0
@@ -40,11 +40,11 @@
 133C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\jsonld-streaming-parser\node_modules\@types\node\assert\strict.d.ts133798759003502671 0
 132C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\jsonld-streaming-parser\node_modules\undici-types\mock-client.d.ts133798759000594870 0
 96C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\stream-to-string\test\value.js133798758819961579 0
-57C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist133807582230379164 1
+57C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist133807592912838934 1
 146C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\config-query-sparql\config\expression-evaluator-factory\mediators.json133798758867904689 0
 135C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-parse\node_modules\@comunica\config-query-sparql\config\README.md133798758998405323 0
 162C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\actor-bindings-aggregator-factory-count\lib\ActorBindingsAggregatorFactoryCount.js.map133798758996253936 0
-63C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\index.html133807560037210180 0
+63C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\index.html133807592771915685 0
 91C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\graphql\polyfills\find.js133798758826005447 0
 90C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\semver\classes\semver.js133798758821982943 0
 125C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\actor-query-result-serialize-stats\lib\index.d.ts133798758900081393 0
@@ -113,16 +113,8 @@
 81C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\yargs\index.mjs133798758823062924 0
 125C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdfa-streaming-parser\node_modules\htmlparser2\lib\index.js133798759000565311 0
 110C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@colors\colors\lib\system\supports-colors.js133798758820233844 0
-63C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\src\app.js133807582230033636 0
+63C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\src\app.js133807591181222071 0
 101C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\winston\lib\winston\config\index.js133798758821383054 0
-102C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@bergos\jsonparse\test\primitives.js133798758822631495 0
-73C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@colors133798758808085852 1
-134C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\jsonld-streaming-serializer\node_modules\undici-types\websocket.d.ts133798758998831398 0
-120C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\bus-hash-bindings\lib\ActorHashBindings.d.ts133798758847092526 0
-89C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-string-ttl\index.js133798758829722765 0
-109C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdfa-streaming-parser\lib\RdfaParser.js.map133798758824388042 0
-61C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\?option.133807562958352179 0
-77C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\emoji-regex133798758817977460 1
 123C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\actor-http-fetch\lib\FetchInitPreprocessor.d.ts133798758933600724 0
 86C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\nullthrows\README.md133802210787458685 0
 75C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\yargs\lib133798758822962363 1
@@ -194,7 +186,7 @@
 138C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-object\node_modules\jsonld-context-parser\lib\IDocumentLoader.js.map133798758998504447 0
 159C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-parse\node_modules\@comunica\actor-abstract-mediatyped\lib\ActorAbstractMediaTyped.js.map133798758991446050 0
 98C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@parcel\transformer-posthtml\lib133802210786518075 1
-74C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\src\styles\styles.css133806655574441281 0
+74C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\src\styles\styles.css133807592911088643 0
 85C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@types\n3\README.md133798758823306092 0
 91C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\xmlchars\xml\1.1\ed2.d.ts133798758820052708 0
 94C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\winston-transport\index.d.ts133798758820273832 0
@@ -305,6 +297,11 @@
 73C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@bergos133798758808050729 1
 96C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@parcel\watcher\src\DirTree.cc133802210788214050 0
 103C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\graphql\language\directiveLocation.js133798758825853982 0
+102C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@bergos\jsonparse\test\primitives.js133798758822631495 0
+73C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@colors133798758808085852 1
+134C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\jsonld-streaming-serializer\node_modules\undici-types\websocket.d.ts133798758998831398 0
+120C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\bus-hash-bindings\lib\ActorHashBindings.d.ts133798758847092526 0
+89C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-string-ttl\index.js133798758829722765 0
 105C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\microdata-rdf-streaming-parser\index.js133798758820561964 0
 90C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\semver\functions\diff.js133798758819519163 0
 90C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\domelementtype\readme.md133798758818695621 0
@@ -342,6 +339,8 @@
 72C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@jeswr133798758808160093 1
 82C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\error-ex\LICENSE133802210785227188 0
 117C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\graphql\validation\rules\ValuesOfCorrectTypeRule.js133798758828291501 0
+138C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\actor-context-preprocess-query-source-skolemize\lib\utils.d.ts133798758992553221 0
+79C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\cors-anywhere133805675022567312 1
 127C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\actor-query-process-explain-physical\lib\index.d.ts133798758900852658 0
 71C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@lmdb133806570869754249 1
 87C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\entities\package.json133798758820732928 0
@@ -459,7 +458,7 @@
 110C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-object\node_modules\@types\node\readline133798758999122203 1
 156C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-parse\node_modules\@comunica\config-query-sparql\config\dereference-rdf\mediators.json133798758997675105 0
 109C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\caniuse-lite\data\features\css-when-else.js133802210797618677 0
-75C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.0641b553.js133807582230319210 0
+75C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.0641b553.js133807591184532209 0
 143C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\config-query-sparql\config\query-operation\actors\query\source.json133798758868335851 0
 85C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\term-size\readme.md133802210788574045 0
 111C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\uritemplate\test\unit\testUriTemplateError.js133798758822742090 0
@@ -524,19 +523,19 @@
 79C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\color-convert133798758818244508 1
 123C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\mediatortype-accuracy\components\context.jsonld133798758833493180 0
 76C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\node-fetch133798758818351532 1
+106C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\type-fest\source\conditional-except.d.ts133802210788684044 0
 116C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\actor-query-operation-union\package.json133798758905192256 0
 88C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\import-fresh\readme.md133802210786017898 0
 116C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@parcel\utils\test\input\sourcemap\no-sourcemap.js133802210792652044 0
 172C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\actor-function-factory-term-greater-than-equal\lib\ActorFunctionFactoryTermGreaterThanEqual.d.ts133798758970315263 0
 107C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@parcel\optimizer-swc\src\SwcOptimizer.js133802210785837235 0
 98C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\shaclc-parse\lib\ShaclcParser.js133798758819911550 0
-106C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\type-fest\source\conditional-except.d.ts133802210788684044 0
 145C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\actor-bindings-aggregator-factory-sample\components\components.jsonld133798758993542508 0
 127C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\winston\node_modules\readable-stream\lib\_stream_transform.js133798758817876900 0
 107C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-object\node_modules\@types\node\ts5.6133798758999252764 1
 79C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\tr46\index.js133798758817019893 0
-152C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-parse\node_modules\@comunica\actor-rdf-parse-html-script\lib\HtmlScriptListener.js133798758998292945 0
 71C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\clone133802210787458685 1
+152C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-parse\node_modules\@comunica\actor-rdf-parse-html-script\lib\HtmlScriptListener.js133798758998292945 0
 118C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-object\node_modules\@types\node\querystring.d.ts133798758998544406 0
 180C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\actor-function-factory-term-xsd-to-day-time-duration\lib\ActorFunctionFactoryTermXsdToDayTimeDuration.js133798758939676736 0
 88C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\uuid\dist\stringify.js133798758839066204 0
@@ -550,8 +549,6 @@
 120C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\fetch-sparql-endpoint\bin\fetch-sparql-endpoint.js.map133798758828603208 0
 117C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\jsonld-context-parser\bin\jsonld-context-parse.d.ts133798758826934866 0
 95C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\uuid\dist\esm-node\version.js133798758839361932 0
-138C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\actor-context-preprocess-query-source-skolemize\lib\utils.d.ts133798758992553221 0
-79C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\cors-anywhere133805675022567312 1
 80C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\whatwg-url\lib133798758818659407 1
 76C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\SparQL.3464ddca.js133807559141938958 0
 84C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\one-time\README.md133798758818143018 0
@@ -623,6 +620,8 @@
 86C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\electron-to-chromium133802210789669457 1
 118C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\actor-query-operation-orderby\package.json133798758912311666 0
 95C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\undici-types\mock-client.d.ts133798758821135643 0
+109C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdfa-streaming-parser\lib\RdfaParser.js.map133798758824388042 0
+77C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\emoji-regex133798758817977460 1
 150C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\rdf-parse\node_modules\@comunica\actor-abstract-mediatyped\components\context.jsonld133798758991426061 0
 73C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\enabled133798758818875986 1
 75C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\env-paths133802210786813464 1
@@ -8891,8 +8890,8 @@
 102C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\logger-void\lib\index.d.ts133798758862018078 0
 122C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\componentsjs\node_modules\undici-types\interceptors.d.ts133798758999177345 0
 99C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\cors-anywhere\test\test-memory.js133805675022487148 0
-93C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@parcel\transformer-raw\lib133802210784715993 1
 102C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\cors-anywhere\test\test-ratelimit.js133805675022507161 0
+93C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@parcel\transformer-raw\lib133802210784715993 1
 121C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\actor-function-factory-term-str-dt\components133798758950812962 1
 92C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\cors-anywhere\test\test.js133805675022537140 0
 119C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\cors-anywhere\node_modules\requires-port\package.json133805675021881805 0
@@ -12112,7 +12111,7 @@
 138C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\config-query-sparql\config\rdf-metadata-extract\mediators.json133798758868034997 0
 141C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\config-query-sparql\config\rdf-metadata-accumulate\mediators.json133798758868024987 0
 127C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\config-query-sparql\config\rdf-metadata\actors.json133798758867181456 0
-79C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.9d3a6bf4.js.map133807581009368519 0
+79C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.9d3a6bf4.js.map133807590401117411 0
 130C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\config-query-sparql\config\rdf-metadata\mediators.json133798758868045004 0
 138C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\config-query-sparql\config\rdf-join-selectivity\mediators.json133798758868014977 0
 136C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\@comunica\config-query-sparql\config\rdf-join-entries-sort\actors.json133798758867112690 0
@@ -14553,10 +14552,10 @@
 83C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\.bin\sparqljs.cmd133798759004495979 0
 97C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\.bin\update-browserslist-db.ps1133802210811098698 0
 75C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\node_modules\.bin\uuid133798759004495979 0
-79C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.0641b553.js.map133807582230369189 0
-76C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.3b8f328d.css133807581009209059 0
-80C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.3b8f328d.css.map133807581009388525 0
+79C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.0641b553.js.map133807591184582091 0
+76C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.3b8f328d.css133807592912817806 0
+80C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.3b8f328d.css.map133807592912838934 0
 75C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.62923232.js133806656521496076 0
 79C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.816e7b21.js.map133806656521366189 0
-75C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.9d3a6bf4.js133807581009209059 0
-68C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.html133807581009655546 0
+75C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.9d3a6bf4.js133807590401067419 0
+68C:\Users\ainoa\Desktop\MASTER_II\SyTW-CLIENTE\SparQL\dist\index.html133807592776982454 0

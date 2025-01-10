@@ -1,4 +1,4 @@
-import { fetchOptions } from './js/sparql.js';
+import { fetchOptions, executeQuery } from './js/sparql.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const regionQuery = `
@@ -70,11 +70,18 @@ async function populateSelect(selectId, query, bindingName = "option") {
 
 function displayResults(results) {
     const resultList = document.getElementById('resultList');
-    resultList.innerHTML = '';
+    resultList.innerHTML = ''; // Limpia los resultados anteriores
 
     results.forEach(result => {
-        const listItem = document.createElement('li');
-        listItem.textContent = `Título: ${result.title}, Publicador: ${result.publisher}`;
-        resultList.appendChild(listItem);
+        // Crear un div para la tarjeta
+        const card = document.createElement('div');
+        card.classList.add('card');
+
+        card.innerHTML = `
+            <h3>${result.title}</h3>
+            <p><strong>Publicador:</strong> ${result.publisher}</p>
+        `;
+
+        resultList.appendChild(card); // Añadir la tarjeta al contenedor
     });
 }

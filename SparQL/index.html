@@ -7,43 +7,51 @@
     <link rel="stylesheet" href="./src/styles/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Consulta SPARQL - Datos de Canarias</h1>
     </header>
 
-    <main>
-        <section id="filters">
+    <main class="main">
+        <section id="filters" class="filters">
             <h2>Filtros</h2>
-            <form id="filterForm">
-                <label for="region">Región:</label>
-                <select id="region" name="region">
-                    <option value="">Cargando regiones...</option>
-                </select>
+            <form id="filterForm" class="filter-form">
+                <div class="form-group">
+                    <label for="region">Región:</label>
+                    <select id="region" name="region">
+                        <option value="">Seleccione una opción</option>
+                    </select>
+                </div>
 
-                <label for="publisher">Entidad publicadora:</label>
-                <select id="publisher" name="publisher">
-                    <option value="">Cargando entidades...</option>
-                </select>
+                <div class="form-group">
+                    <label for="publisher">Entidad publicadora:</label>
+                    <select id="publisher" name="publisher">
+                        <option value="">Seleccione una opción</option>
+                    </select>
+                </div>
 
-                <label for="category">Categoría:</label>
-                <select id="category" name="category">
-                    <option value="">Cargando categorías...</option>
-                </select>
+                <div class="form-group">
+                    <label for="category">Categoría:</label>
+                    <select id="category" name="category">
+                        <option value="">Seleccione una opción</option>
+                    </select>
+                </div>
 
-                <label for="keyword">Palabra clave:</label>
-                <input type="text" id="keyword" name="keyword" placeholder="Ingrese una palabra clave">
+                <div class="form-group">
+                    <label for="keyword">Palabra clave:</label>
+                    <input type="text" id="keyword" name="keyword" placeholder="Ingrese una palabra clave">
+                </div>
 
-                <button type="submit">Buscar</button>
+                <button type="submit" class="btn">Buscar</button>
             </form>
         </section>
 
-        <section id="results">
+        <section id="results" class="results">
             <h2>Resultados</h2>
-            <ul id="resultList"></ul>
+            <div id="resultList" class="card-container"></div>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>Consulta SPARQL - Datos de Canarias © 2025</p>
     </footer>
 
