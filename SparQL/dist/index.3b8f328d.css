@@ -88,33 +88,32 @@ select, input {
 }
 
 .card {
-  text-align: left;
-  background-color: #f8f8f8;
-  border: 1px solid #fff;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 8px;
   flex-direction: column;
   justify-content: space-between;
-  height: 220px;
   padding: 16px;
   transition: transform .3s, box-shadow .3s;
   display: flex;
-  overflow: hidden;
-  box-shadow: 0 6px 15px #00000026;
+  box-shadow: 0 4px 6px #0000001a;
 }
 
 .card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px #0000004d;
+  transform: scale(1.03);
+  box-shadow: 0 8px 12px #0003;
 }
 
-.card h5 {
-  color: #4a4a4a;
+.card-header h5 {
+  text-transform: uppercase;
+  color: #333;
   margin-bottom: 10px;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
-.card p {
-  color: #666;
+.card-body p {
+  margin: 5px 0;
   font-size: .9em;
 }
 
@@ -131,24 +130,37 @@ select, input {
   color: #0056b3;
 }
 
+.download-formats ul {
+  margin: 10px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.download-formats li {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.download-formats a {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.download-formats a:hover {
+  text-decoration: underline;
+}
+
 .footer {
   color: #fff;
   text-align: center;
   z-index: 1000;
+  text-align: center;
   background-color: #754d43;
   width: 100%;
   padding: 10px 0;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
-}
-
-.footer a {
-  color: #e9c46a;
-  margin-top: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
 }
 
 .footer a:hover {
@@ -161,5 +173,41 @@ select, input {
   color: #555;
   margin-top: 20px;
   font-size: 1.2rem;
+}
+
+.keywords {
+  margin-top: 10px;
+}
+
+.keywords ul {
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+}
+
+.keywords li {
+  color: #555;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: .9em;
+}
+
+.result-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+  overflow-y: auto;
+}
+
+#resultList {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  display: flex;
 }
 /*# sourceMappingURL=index.3b8f328d.css.map */

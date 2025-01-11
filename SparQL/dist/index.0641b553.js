@@ -624,18 +624,28 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const publisher = document.getElementById('publisher').value;
         const category = document.getElementById('category').value;
         const keyword = document.getElementById('keyword').value;
+        const startDate = document.getElementById('startDate').value;
+        const endDate = document.getElementById('endDate').value;
         const query = `
-        SELECT DISTINCT ?dataset ?title ?description WHERE {
-            ?dataset a <http://www.w3.org/ns/dcat#Dataset> .
-            ?dataset <http://purl.org/dc/terms/title> ?title .
-            OPTIONAL { ?dataset <http://purl.org/dc/terms/description> ?description . }
-            ${region ? `?dataset <http://purl.org/dc/terms/spatial> <${region}>.` : ''}
-            ${publisher ? `?dataset <http://purl.org/dc/terms/publisher> <${publisher}>.` : ''}
-            ${category ? `?dataset <http://www.w3.org/ns/dcat#theme> <${category}>.` : ''}
-            ${keyword ? `FILTER(CONTAINS(LCASE(?title), "${keyword.toLowerCase()}"))` : ''}
-        } LIMIT 100
-    `;
+            SELECT DISTINCT ?dataset ?title ?issued ?accrualPeriodicityLabel ?publisherName ?keyword WHERE {
+                ?dataset a <http://www.w3.org/ns/dcat#Dataset>.
+                ?dataset <http://purl.org/dc/terms/title> ?title.
+                OPTIONAL { ?dataset <http://purl.org/dc/terms/issued> ?issued. }
+                OPTIONAL {
+                    ?dataset <http://purl.org/dc/terms/publisher> ?publisher.
+                    ?publisher <http://www.w3.org/2004/02/skos/core#prefLabel> ?publisherName.
+                }
+                OPTIONAL { ?dataset <http://www.w3.org/ns/dcat#keyword> ?keyword. }
+                ${region ? `?dataset <http://purl.org/dc/terms/spatial> <${region}>.` : ''}
+                ${publisher ? `?dataset <http://purl.org/dc/terms/publisher> <${publisher}>.` : ''}
+                ${category ? `?dataset <http://www.w3.org/ns/dcat#theme> <${category}>.` : ''}
+                ${keyword ? `FILTER(CONTAINS(LCASE(?keyword), "${keyword.toLowerCase()}"))` : ''}
+                ${startDate ? `FILTER(?issued >= "${startDate}"^^xsd:date)` : ''}
+                ${endDate ? `FILTER(?issued <= "${endDate}"^^xsd:date)` : ''}
+            } LIMIT 1000
+        `;
         const results = await (0, _sparqlJs.executeQuery)(query);
+        console.log('rrr', results);
         displayResults(results);
     });
 });
@@ -665,10 +675,26 @@ function displayResults(results) {
     results.forEach((result)=>{
         const card = document.createElement('div');
         card.classList.add('card');
+        const limitedKeywords = result.keywords.slice(0, 50);
         card.innerHTML = `
-            <h5>${result.title}</h5>
-            <a href="${result.dataset}" target="_blank" rel="noopener noreferrer">Ver dataset</a>
+            <div class="card-header">
+                <h5>${result.title}</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>Fecha de publicaci\xf3n:</strong> ${result.issued}</p>
+                <p><strong>Entidad publicadora:</strong> ${result.publisher}</p>
+                <div class="keywords">
+                    <strong>Palabras clave:</strong>
+                    <ul>
+                        ${limitedKeywords.length > 0 ? limitedKeywords.map((keyword)=>`<li>${keyword}</li>`).join('') : '<li>No disponibles</li>'}
+                    </ul>
+                </div>
+            </div>
         `;
+        card.addEventListener('click', ()=>{
+            if (result.dataset) window.open(result.dataset, '_blank');
+            else alert('URL no disponible');
+        });
         resultList.appendChild(card);
     });
 }

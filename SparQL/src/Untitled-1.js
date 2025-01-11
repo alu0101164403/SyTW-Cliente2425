@@ -25,3 +25,10 @@ SELECT DISTINCT ?keyword WHERE {
   SELECT DISTINCT ?location WHERE {
     ?dataset <http://purl.org/dc/terms/spatial> ?location.
   }
+
+// datos opcionales de dataset
+SELECT DISTINCT ?property WHERE {
+  ?dataset a <http://www.w3.org/ns/dcat#Dataset> .
+  ?dataset ?property ?value .
+} LIMIT 100
+
