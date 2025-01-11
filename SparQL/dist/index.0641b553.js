@@ -627,18 +627,21 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const startDate = document.getElementById('startDate').value;
         const endDate = document.getElementById('endDate').value;
         const query = `
-            SELECT DISTINCT ?dataset ?title ?issued ?accrualPeriodicityLabel ?publisherName ?keyword WHERE {
-                ?dataset a <http://www.w3.org/ns/dcat#Dataset>.
-                ?dataset <http://purl.org/dc/terms/title> ?title.
-                OPTIONAL { ?dataset <http://purl.org/dc/terms/issued> ?issued. }
+            PREFIX dcat: <http://www.w3.org/ns/dcat#>
+            PREFIX dct: <http://purl.org/dc/terms/>
+            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+            SELECT DISTINCT ?dataset ?title ?issued ?publisherName ?keyword WHERE {
+                ?dataset a dcat:Dataset .
+                ?dataset dct:title ?title .
+                OPTIONAL { ?dataset dct:issued ?issued . }
                 OPTIONAL {
-                    ?dataset <http://purl.org/dc/terms/publisher> ?publisher.
-                    ?publisher <http://www.w3.org/2004/02/skos/core#prefLabel> ?publisherName.
+                    ?dataset dct:publisher ?publisher .
+                    ?publisher skos:prefLabel ?publisherName .
                 }
-                OPTIONAL { ?dataset <http://www.w3.org/ns/dcat#keyword> ?keyword. }
-                ${region ? `?dataset <http://purl.org/dc/terms/spatial> <${region}>.` : ''}
-                ${publisher ? `?dataset <http://purl.org/dc/terms/publisher> <${publisher}>.` : ''}
-                ${category ? `?dataset <http://www.w3.org/ns/dcat#theme> <${category}>.` : ''}
+                OPTIONAL { ?dataset dcat:keyword ?keyword . }
+                ${region ? `?dataset dct:spatial <${region}>.` : ''}
+                ${publisher ? `?dataset dct:publisher <${publisher}>.` : ''}
+                ${category ? `?dataset dcat:theme <${category}>.` : ''}
                 ${keyword ? `FILTER(CONTAINS(LCASE(?keyword), "${keyword.toLowerCase()}"))` : ''}
                 ${startDate ? `FILTER(?issued >= "${startDate}"^^xsd:date)` : ''}
                 ${endDate ? `FILTER(?issued <= "${endDate}"^^xsd:date)` : ''}
@@ -681,7 +684,7 @@ function displayResults(results) {
                 <h5>${result.title}</h5>
             </div>
             <div class="card-body">
-                <p><strong>Fecha de publicaci\xf3n:</strong> ${result.issued}</p>
+                <p><strong>Fecha de publicaci\xf3n:</strong> ${result.issued.substr(0, 10)}</p>
                 <p><strong>Entidad publicadora:</strong> ${result.publisher}</p>
                 <div class="keywords">
                     <strong>Palabras clave:</strong>

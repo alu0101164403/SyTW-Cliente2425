@@ -27,7 +27,7 @@
 138C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\componentsjs\node_modules\@types\node\stream\consumers.d.ts133810074911268212 0
 124C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\rdf-parse\node_modules\cross-fetch\index.d.ts133810074918617456 0
 110C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@parcel\profiler\lib\index.d.ts133809146228471492 0
-70C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist133810922893147880 1
+70C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist133810961486753897 1
 105C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\logform\dist\pad-levels.js133810074915961993 0
 148C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@comunica\actor-function-factory-expression-extensions\lib\index.d.ts133810074901053601 0
 149C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\rdf-parse\node_modules\@comunica\mediator-combine-union\lib\index.d.ts133810074918359659 0
@@ -124,7 +124,7 @@
 107C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\weak-lru-cache\tests\test.js133809146259471036 0
 109C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\js-yaml\lib\schema\failsafe.js133809146251975126 0
 112C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\caniuse-lite\data\features\sni.js133809146246548842 0
-75C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\README.md133810074900045941 0
+75C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\README.md133810963381780972 0
 97C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\domelementtype\lib133809148686149266 1
 112C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\canonicalize\test\testdata\output133810074910696347 1
 145C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@comunica\utils-expression-evaluator\lib\expressions\Operator.d.ts133810074909335810 0
@@ -135,7 +135,7 @@
 134C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\http-proxy-middleware\dist\handlers\fix-request-body.js133809146251642174 0
 144C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\graphql-to-sparql\node_modules\jsonld-context-parser\index.js.map133810074912593194 0
 117C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\http-proxy-middleware\dist\errors.d.ts133809146251622150 0
-69C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\src133810074964936201 1
+69C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\src133810929732235237 1
 94C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\rdf-quad\tst.js133810074918922311 0
 125C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\posthtml\node_modules\entities\lib\encode.d.ts133809146255393237 0
 104C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\chalk\source\templates.js133809146247383891 0
@@ -146,13 +146,13 @@
 99C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\uuid\dist\version.js133810074920681286 0
 143C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@comunica\bus-context-preprocess\lib\ActorContextPreprocess.d.ts133810074906866196 0
 126C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@comunica\query-sparql\lib\index-browser.js.map133810074908972401 0
-76C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\src\app.js133810922892996025 0
+76C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\src\app.js133810961486605372 0
 142C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@comunica\actor-init-query\components\ActorInitQueryBase.jsonld133810074903637997 0
 102C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@types\http-link-header133810074909692378 1
 123C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@comunica\actor-query-operation-path-nps\lib133810074904478016 1
 162C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\winston-transport\node_modules\readable-stream\lib\internal\streams\from-browser.js133810074920873212 0
 110C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\caniuse-lite\data\regions\CO.js133809146246884409 0
-72C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\src\js133809148629332560 1
+72C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\src\js133810929732235237 1
 122C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\microdata-rdf-streaming-parser\node_modules133810074916181280 1
 149C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\rdf-parse\node_modules\@comunica\actor-rdf-parse-jsonld\lib\index.d.ts133810074917589796 0
 95C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\n3\lib\N3Util.js133810074916336372 0
@@ -187,7 +187,7 @@
 138C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@comunica\actor-query-process-explain-physical\package.json133810074905034943 0
 128C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\caniuse-lite\data\features\http-live-streaming.js133809146246216994 0
 126C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\caniuse-lite\data\features\input-file-accept.js133809146246287027 0
-82C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\src\js\sparql.js133810914408622888 0
+82C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\src\js\sparql.js133810929732235237 0
 108C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\minimist\test\default_bool.js133810074916303256 0
 102C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\undici-types\index.d.ts133809146259097591 0
 97C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\minimist\README.md133810074916291815 0
@@ -8989,7 +8989,7 @@
 126C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\componentsjs\node_modules\@types\node\test.d.ts133810074911278202 0
 123C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\componentsjs\node_modules\@types\node\timers133810074911288204 1
 128C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\componentsjs\node_modules\@types\node\timers.d.ts133810074911288204 0
-92C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist\index.9d3a6bf4.js.map133810914408791200 0
+92C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist\index.9d3a6bf4.js.map133810929599137635 0
 133C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@comunica\actor-query-result-serialize-rdf\LICENSE.txt133810074905085414 0
 125C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\componentsjs\node_modules\@types\node\tls.d.ts133810074911288204 0
 136C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@comunica\actor-function-factory-term-predicate\README.md133810074902219466 0
@@ -9332,7 +9332,7 @@
 110C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@comunica\bus-rdf-serialize\lib133810074907792724 1
 110C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\caniuse-lite\data\regions\LC.js133809146247045568 0
 110C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\caniuse-lite\data\regions\LI.js133809146247045568 0
-88C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist\index.9d3a6bf4.js133810914408781146 0
+88C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist\index.9d3a6bf4.js133810929599127646 0
 110C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\caniuse-lite\data\regions\LU.js133809146247045568 0
 110C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\caniuse-lite\data\regions\MA.js133809146247045568 0
 125C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\@swc\helpers\esm\_skip_first_generator_next.js133809146244304216 0
@@ -14547,8 +14547,8 @@
 110C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\.bin\update-browserslist-db.ps1133809146216786881 0
 92C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\.bin\uuid.cmd133810074900156941 0
 92C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\node_modules\.bin\uuid.ps1133810074900156941 0
-88C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist\index.0641b553.js133810922893127890 0
-92C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist\index.0641b553.js.map133810922893137879 0
+88C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist\index.0641b553.js133810961486743900 0
+92C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist\index.0641b553.js.map133810961486753897 0
 89C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist\index.3b8f328d.css133810912642158153 0
 93C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist\index.3b8f328d.css.map133810912642178154 0
 81C:\Users\ainoa\OneDrive\Desktop\MASTER_II\SyTW-Cliente2425\SparQL\dist\index.html133810912642128152 0
