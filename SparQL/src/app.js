@@ -1,4 +1,4 @@
-import { fetchOptions, executeQuery } from './js/sparql.js';
+import { fetchOptions, executeQuery} from './js/sparql.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const regionQuery = `
@@ -34,16 +34,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const keyword = document.getElementById('keyword').value;
 
         const query = `
-            SELECT DISTINCT ?dataset ?title ?publisher WHERE {
-                ?dataset a <http://www.w3.org/ns/dcat#Dataset>.
-                ${region ? `?dataset <http://purl.org/dc/terms/spatial> <${region}>.` : ''}
-                ${publisher ? `?dataset <http://purl.org/dc/terms/publisher> <${publisher}>.` : ''}
-                ${category ? `?dataset <http://www.w3.org/ns/dcat#theme> <${category}>.` : ''}
-                ${keyword ? `?dataset <http://www.w3.org/ns/dcat#keyword> "${keyword}".` : ''}
-                ?dataset <http://purl.org/dc/terms/title> ?title.
-                ?dataset <http://purl.org/dc/terms/publisher> ?publisher.
-            } LIMIT 100
-        `;
+        SELECT DISTINCT ?dataset ?title ?description WHERE {
+            ?dataset a <http://www.w3.org/ns/dcat#Dataset> .
+            ?dataset <http://purl.org/dc/terms/title> ?title .
+            OPTIONAL { ?dataset <http://purl.org/dc/terms/description> ?description . }
+            ${region ? `?dataset <http://purl.org/dc/terms/spatial> <${region}>.` : ''}
+            ${publisher ? `?dataset <http://purl.org/dc/terms/publisher> <${publisher}>.` : ''}
+            ${category ? `?dataset <http://www.w3.org/ns/dcat#theme> <${category}>.` : ''}
+            ${keyword ? `FILTER(CONTAINS(LCASE(?title), "${keyword.toLowerCase()}"))` : ''}
+        } LIMIT 100
+    `;   
 
         const results = await executeQuery(query);
         displayResults(results);
@@ -70,18 +70,24 @@ async function populateSelect(selectId, query, bindingName = "option") {
 
 function displayResults(results) {
     const resultList = document.getElementById('resultList');
-    resultList.innerHTML = ''; // Limpia los resultados anteriores
+    resultList.innerHTML = ''; // Limpiar resultados anteriores
+
+    if (results.length === 0) {
+        resultList.innerHTML = '<p class="no-results-message">No se han encontrado resultados</p>';
+        return;
+    }
 
     results.forEach(result => {
-        // Crear un div para la tarjeta
         const card = document.createElement('div');
         card.classList.add('card');
-
         card.innerHTML = `
-            <h3>${result.title}</h3>
-            <p><strong>Publicador:</strong> ${result.publisher}</p>
+            <h5>${result.title}</h5>
+            <a href="${result.dataset}" target="_blank" rel="noopener noreferrer">Ver dataset</a>
         `;
-
-        resultList.appendChild(card); // Añadir la tarjeta al contenedor
+        resultList.appendChild(card);
     });
 }
+
+
+
+

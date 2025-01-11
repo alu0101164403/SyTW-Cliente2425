@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"9w8YQ":[function(require,module,exports,__globalThis) {
+})({"cDQV4":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -625,16 +625,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
         const category = document.getElementById('category').value;
         const keyword = document.getElementById('keyword').value;
         const query = `
-            SELECT DISTINCT ?dataset ?title ?publisher WHERE {
-                ?dataset a <http://www.w3.org/ns/dcat#Dataset>.
-                ${region ? `?dataset <http://purl.org/dc/terms/spatial> <${region}>.` : ''}
-                ${publisher ? `?dataset <http://purl.org/dc/terms/publisher> <${publisher}>.` : ''}
-                ${category ? `?dataset <http://www.w3.org/ns/dcat#theme> <${category}>.` : ''}
-                ${keyword ? `?dataset <http://www.w3.org/ns/dcat#keyword> "${keyword}".` : ''}
-                ?dataset <http://purl.org/dc/terms/title> ?title.
-                ?dataset <http://purl.org/dc/terms/publisher> ?publisher.
-            } LIMIT 100
-        `;
+        SELECT DISTINCT ?dataset ?title ?description WHERE {
+            ?dataset a <http://www.w3.org/ns/dcat#Dataset> .
+            ?dataset <http://purl.org/dc/terms/title> ?title .
+            OPTIONAL { ?dataset <http://purl.org/dc/terms/description> ?description . }
+            ${region ? `?dataset <http://purl.org/dc/terms/spatial> <${region}>.` : ''}
+            ${publisher ? `?dataset <http://purl.org/dc/terms/publisher> <${publisher}>.` : ''}
+            ${category ? `?dataset <http://www.w3.org/ns/dcat#theme> <${category}>.` : ''}
+            ${keyword ? `FILTER(CONTAINS(LCASE(?title), "${keyword.toLowerCase()}"))` : ''}
+        } LIMIT 100
+    `;
         const results = await (0, _sparqlJs.executeQuery)(query);
         displayResults(results);
     });
@@ -657,19 +657,22 @@ async function populateSelect(selectId, query, bindingName = "option") {
 }
 function displayResults(results) {
     const resultList = document.getElementById('resultList');
-    resultList.innerHTML = ''; // Limpia los resultados anteriores
+    resultList.innerHTML = ''; // Limpiar resultados anteriores
+    if (results.length === 0) {
+        resultList.innerHTML = '<p class="no-results-message">No se han encontrado resultados</p>';
+        return;
+    }
     results.forEach((result)=>{
-        // Crear un div para la tarjeta
         const card = document.createElement('div');
         card.classList.add('card');
         card.innerHTML = `
-            <h3>${result.title}</h3>
-            <p><strong>Publicador:</strong> ${result.publisher}</p>
+            <h5>${result.title}</h5>
+            <a href="${result.dataset}" target="_blank" rel="noopener noreferrer">Ver dataset</a>
         `;
-        resultList.appendChild(card); // Añadir la tarjeta al contenedor
+        resultList.appendChild(card);
     });
 }
 
-},{"./js/sparql.js":"BVjTx"}]},["9w8YQ","bNKaB"], "bNKaB", "parcelRequire94c2")
+},{"./js/sparql.js":"BVjTx"}]},["cDQV4","bNKaB"], "bNKaB", "parcelRequire94c2")
 
 //# sourceMappingURL=index.0641b553.js.map

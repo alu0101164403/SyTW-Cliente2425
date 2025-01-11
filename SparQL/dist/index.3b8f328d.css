@@ -1,20 +1,23 @@
 body {
   color: #333;
-  background-color: #f4f7fc;
+  background-color: #f5e9e6;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  display: flex;
 }
 
-h1, h2 {
-  text-align: center;
-  margin: 16px 0;
+.main {
+  flex: 1;
 }
 
 header {
   color: #fff;
-  background-color: #0056b3;
+  text-align: center;
+  background-color: #754d43;
   padding: 20px 0;
 }
 
@@ -30,7 +33,8 @@ main {
 }
 
 .filters {
-  background-color: #fff;
+  background-color: #ecc6bc;
+  border-left: 6px solid #a77a6f;
   border-radius: 8px;
   margin-bottom: 20px;
   padding: 20px;
@@ -55,7 +59,7 @@ label {
 }
 
 select, input {
-  border: 1px solid #ccc;
+  border: 1px solid #5c5a57;
   border-radius: 4px;
   padding: 8px;
   font-size: 1em;
@@ -64,23 +68,20 @@ select, input {
 .btn {
   color: #fff;
   cursor: pointer;
-  background-color: #0056b3;
+  background-color: #020103;
   border: none;
   border-radius: 4px;
   padding: 10px 16px;
   font-size: 1em;
+  transition: background-color .3s;
 }
 
 .btn:hover {
-  background-color: #00408f;
-}
-
-.results {
-  margin-top: 20px;
+  background-color: #575757;
 }
 
 .card-container {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 20px;
   display: grid;
@@ -88,35 +89,77 @@ select, input {
 
 .card {
   text-align: left;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  border: 1px solid #fff;
   border-radius: 8px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 220px;
   padding: 16px;
   transition: transform .3s, box-shadow .3s;
-  box-shadow: 0 4px 6px #0000001a;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 6px 15px #00000026;
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 10px #0003;
+  box-shadow: 0 10px 20px #0000004d;
 }
 
-.card h3 {
-  margin-bottom: 8px;
-  font-size: 1.2em;
+.card h5 {
+  color: #4a4a4a;
+  margin-bottom: 10px;
+  font-size: 1.1em;
 }
 
 .card p {
-  color: #555;
+  color: #666;
   font-size: .9em;
 }
 
-footer {
-  text-align: center;
+.card a {
+  color: #007bff;
+  margin-top: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color .2s;
+  display: inline-block;
+}
+
+.card a:hover {
+  color: #0056b3;
+}
+
+.footer {
   color: #fff;
-  background-color: #0056b3;
-  border-radius: 8px 8px 0 0;
+  text-align: center;
+  z-index: 1000;
+  background-color: #754d43;
+  width: 100%;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.footer a {
+  color: #e9c46a;
+  margin-top: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.footer a:hover {
+  color: #f4a261;
+  text-decoration: underline;
+}
+
+.no-results-message {
+  text-align: center;
+  color: #555;
   margin-top: 20px;
-  padding: 10px;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=index.3b8f328d.css.map */

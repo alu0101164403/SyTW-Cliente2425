@@ -22,11 +22,11 @@ export async function fetchOptions(query, bindingName = "option") {
             const uriElement = result.querySelector(`binding[name='${bindingName}'] uri`);
             const labelElement = result.querySelector("binding[name='label'] literal");
 
-            const uri = uriElement ? uriElement.textContent : null; // Verificar existencia de URI
+            const uri = uriElement ? uriElement.textContent : null;
             const label = labelElement
-                ? labelElement.textContent // Usar el label si está presente
+                ? labelElement.textContent 
                 : uri
-                ? uri.split('/').pop().replace(/-/g, ' ') // Si no hay label, usar el URI
+                ? uri.split('/').pop().replace(/-/g, ' ') 
                 : 'Sin nombre'; // En caso de error, mostrar "Sin nombre"
 
             return { uri, label };
@@ -59,15 +59,16 @@ export async function executeQuery(query) {
         const xmlDoc = parser.parseFromString(text, "application/xml");
 
         // Extraer los resultados
-        const results = Array.from(xmlDoc.querySelectorAll("result")).map(result => {
-            const title = result.querySelector("binding[name='title'] literal")?.textContent || 'Sin título';
-            const publisher = result.querySelector("binding[name='publisher'] uri")?.textContent || 'Desconocido';
-            return { title, publisher };
-        });
+        const results = Array.from(xmlDoc.querySelectorAll("result")).map(result => ({
+            dataset: result.querySelector("binding[name='dataset'] uri")?.textContent,
+            title: result.querySelector("binding[name='title'] literal")?.textContent || 'Sin título',
+        }));
 
+        console.log('res', results);
         return results;
     } catch (error) {
         console.error('Error al ejecutar la consulta SPARQL:', error);
         return [];
     }
 }
+
